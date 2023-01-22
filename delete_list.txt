@@ -1,0 +1,3 @@
+list_delete(X,[X],[]).
+list_delete(X,[X1|L1],L1).
+list_delete(X,[Y|L1],[Y|L2]):-list_delete(Y,L1,L2).
